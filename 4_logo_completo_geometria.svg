@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 260" width="100%" height="100%">
+  <defs>
+    <!-- Brillo Neón sutil para las formas -->
+    <filter id="shapeGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- FILA SUPERIOR: LAS 5 FIGURAS CON CARITAS -->
+  <g transform="translate(380, 50)" filter="url(#shapeGlow)">
+    <!-- 1. Círculo Cian -->
+    <g transform="translate(-160, 0)">
+      <circle cx="0" cy="0" r="24" fill="#00e5ff"/>
+      <circle cx="0" cy="0" r="16" fill="#ffffff"/>
+      <circle cx="0" cy="0" r="11" fill="#00e5ff"/>
+      <circle cx="-4" cy="-1" r="2.5" fill="#ffffff"/>
+      <circle cx="4" cy="-1" r="2.5" fill="#ffffff"/>
+    </g>
+
+    <!-- 2. Triángulo Rosa/Magenta -->
+    <g transform="translate(-80, 0)">
+      <polygon points="0,22 -22,-18 22,-18" fill="#ff2a85"/>
+      <polygon points="0,14 -14,-12 14,-12" fill="#ffffff"/>
+      <circle cx="-4" cy="-3" r="2.5" fill="#ff2a85"/>
+      <circle cx="4" cy="-3" r="2.5" fill="#ff2a85"/>
+    </g>
+
+    <!-- 3. Cuadrado Ámbar/Naranja -->
+    <g transform="translate(0, 0) rotate(15)">
+      <rect x="-21" y="-21" width="42" height="42" rx="6" fill="#ffb703"/>
+      <rect x="-14" y="-14" width="28" height="28" rx="4" fill="#ffffff"/>
+      <circle cx="-4" cy="-1" r="2.5" fill="#ffb703"/>
+      <circle cx="4" cy="-1" r="2.5" fill="#ffb703"/>
+    </g>
+
+    <!-- 4. Hexágono Morado -->
+    <g transform="translate(80, 0)">
+      <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" fill="#9d4edd"/>
+      <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="#ffffff"/>
+      <circle cx="-4" cy="0" r="2.5" fill="#9d4edd"/>
+      <circle cx="4" cy="0" r="2.5" fill="#9d4edd"/>
+    </g>
+
+    <!-- 5. Estrella Verde/Turquesa -->
+    <g transform="translate(160, 0)">
+      <polygon points="0,-24 7,-8 24,-7 11,5 15,22 0,12 -15,22 -11,5 -24,-7 -7,-8" fill="#00f59b"/>
+      <circle cx="0" cy="0" r="9" fill="#ffffff"/>
+      <circle cx="-3" cy="-1" r="2" fill="#00f59b"/>
+      <circle cx="3" cy="-1" r="2" fill="#00f59b"/>
+    </g>
+  </g>
+
+  <!-- FILA INFERIOR: TEXTO GEOMETRÍA IDÉNTICO AL JUEGO -->
+  <text x="380" y="215" 
+        font-family="'Impact', 'Arial Black', 'Montserrat Black', sans-serif" 
+        font-size="120" 
+        font-weight="900" 
+        letter-spacing="2" 
+        text-anchor="middle">
+    <tspan fill="#ffffff">GEO</tspan><tspan fill="#00e5ff">METRÍA</tspan>
+  </text>
+</svg>
