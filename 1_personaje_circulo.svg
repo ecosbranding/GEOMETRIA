@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <!-- Brillo neón cian controlado -->
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="cyanBody" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38f9ff"/>
+      <stop offset="85%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#0096c7"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#cyanGlow)" transform="translate(150, 150)">
+    <!-- Aura de luz exterior -->
+    <circle cx="0" cy="0" r="125" fill="#00e5ff" opacity="0.3"/>
+    <!-- Anillo exterior blanco grueso -->
+    <circle cx="0" cy="0" r="110" fill="#ffffff"/>
+    <!-- Cuerpo circular cian -->
+    <circle cx="0" cy="0" r="78" fill="url(#cyanBody)"/>
+    <!-- Ojos blancos simétricos -->
+    <circle cx="-28" cy="-5" r="17" fill="#ffffff"/>
+    <circle cx="28" cy="-5" r="17" fill="#ffffff"/>
+  </g>
+</svg>
